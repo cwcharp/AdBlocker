@@ -1,5 +1,5 @@
 {
-    "manifest_version": 2,
+    "manifest_version": 3,
     "name": "My Extension",
     "version": "0.0.1",
     "author": "Cole Charpentier",
@@ -7,9 +7,13 @@
     "permissions": [
         "tabs",
         "webNavigation",
-        "https://linkedin.com/"
+        "scripting"
+    ],
+    "host_permissions": [
+        "https://www.linkedin.com/*",
+        "https://linkedin.com/*"
     ],
     "background": {
-        "scripts": ["background.js"]
+        "service_worker": "background.js"
     }
 }
