@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+    "name": "My Extension",
+    "version": "0.0.1",
+    "author": "Cole Charpentier",
+    "description": "A simple Chrome extension for blocking ads",
+    "permissions": [
+        "tabs",
+        "webNavigation",
+        "https://linkedin.com/"
+    ],
+    "background": {
+        "scripts": ["extension.js"]
+    }
+}
